@@ -1,19 +1,14 @@
 //
-//  ViewController.swift
+//  ComicsListController.swift
 //  marvel
 //
 //  Created by Ghazi Tozri on 7/2/2022.
 //
 
+import Foundation
 import UIKit
-
-class ViewController: UIViewController {
-
+class ComicsListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
