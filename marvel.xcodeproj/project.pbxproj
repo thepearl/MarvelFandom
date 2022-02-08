@@ -21,6 +21,10 @@
 		852956BE27B15B6C00B35A89 /* Storyboard.Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852956BD27B15B6C00B35A89 /* Storyboard.Constants.swift */; };
 		852956C027B15B8300B35A89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852956BF27B15B8300B35A89 /* Constants.swift */; };
 		852956C327B15C7200B35A89 /* UIViewController.Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852956C227B15C7200B35A89 /* UIViewController.Extensions.swift */; };
+		85DFE62427B31732004DA176 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DFE62227B31732004DA176 /* ComicCell.swift */; };
+		85DFE62527B31732004DA176 /* ComicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85DFE62327B31732004DA176 /* ComicCell.xib */; };
+		85DFE62727B32026004DA176 /* UICollectionView.Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DFE62627B32026004DA176 /* UICollectionView.Extensions.swift */; };
+		85DFE62927B32067004DA176 /* String.Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DFE62827B32067004DA176 /* String.Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		852956BD27B15B6C00B35A89 /* Storyboard.Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.Constants.swift; sourceTree = "<group>"; };
 		852956BF27B15B8300B35A89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		852956C227B15C7200B35A89 /* UIViewController.Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.Extensions.swift; sourceTree = "<group>"; };
+		85DFE62227B31732004DA176 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
+		85DFE62327B31732004DA176 /* ComicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCell.xib; sourceTree = "<group>"; };
+		85DFE62627B32026004DA176 /* UICollectionView.Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.Extensions.swift; sourceTree = "<group>"; };
+		85DFE62827B32067004DA176 /* String.Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +237,7 @@
 		852956B427B1590B00B35A89 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				85DFE62127B31711004DA176 /* ComicCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -237,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				852956C227B15C7200B35A89 /* UIViewController.Extensions.swift */,
+				85DFE62627B32026004DA176 /* UICollectionView.Extensions.swift */,
+				85DFE62827B32067004DA176 /* String.Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,13 +261,21 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		85DFE62127B31711004DA176 /* ComicCell */ = {
+			isa = PBXGroup;
+			children = (
+				85DFE62227B31732004DA176 /* ComicCell.swift */,
+				85DFE62327B31732004DA176 /* ComicCell.xib */,
+			);
+			path = ComicCell;
+			sourceTree = "<group>";
+		};
 		DB3F68180686A3DDCB845DA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				3A6C0B7908BED10754464D79 /* Pods-marvel.debug.xcconfig */,
 				7D823D2D12AD33A6123ADB13 /* Pods-marvel.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -366,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8529568727B1567300B35A89 /* LaunchScreen.storyboard in Resources */,
+				85DFE62527B31732004DA176 /* ComicCell.xib in Resources */,
 				8529568427B1567300B35A89 /* Assets.xcassets in Resources */,
 				8529567F27B1567100B35A89 /* Main.storyboard in Resources */,
 			);
@@ -417,11 +437,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DFE62727B32026004DA176 /* UICollectionView.Extensions.swift in Sources */,
+				85DFE62927B32067004DA176 /* String.Extensions.swift in Sources */,
 				852956BE27B15B6C00B35A89 /* Storyboard.Constants.swift in Sources */,
 				852956B827B1598900B35A89 /* ComicDetailsController.swift in Sources */,
 				8529567827B1567100B35A89 /* AppDelegate.swift in Sources */,
 				852956C327B15C7200B35A89 /* UIViewController.Extensions.swift in Sources */,
 				8529568227B1567100B35A89 /* marvel.xcdatamodeld in Sources */,
+				85DFE62427B31732004DA176 /* ComicCell.swift in Sources */,
 				852956B627B1597A00B35A89 /* ComicsListController.swift in Sources */,
 				852956C027B15B8300B35A89 /* Constants.swift in Sources */,
 			);
